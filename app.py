@@ -12,8 +12,8 @@ model = joblib.load(open("model-v1.joblib","rb"))
 
 def data_preprocessor(df):
 
-    df.season_year = df.season_year.map(round())
-    df.birth_year = df.birth_year.map(round())
+    df.season_year = df.season_year.apply(lambda x: round(x))
+    df.birth_year = df.birth_year.apply(lambda x: round(x))
     return df
 
 def visualize_confidence_level(prediction_proba):
