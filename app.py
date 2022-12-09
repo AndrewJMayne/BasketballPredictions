@@ -50,7 +50,7 @@ Perdicts the salary range of an nba player using values provied in the sidebar
 
 def get_user_input():
     
-    ppg = st.sidebar.slider('points per game', 0, 40.0, 11.3)
+    ppg = st.sidebar.slider('points per game', 0.0, 40.0, 11.3)
     apg = st.sidebar.slider('assists per game', 0.0, 13.0, 3.0 )
     rpg = st.sidebar.slider('rebounds per game',0.0, 18.0, 4.7)
     mpg = st.sidebar.slider('minute per game', 0.0, 48.0, 26.5)
